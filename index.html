@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="calc-contain">
+        <h1>Calculadora</h1>
+
+        <div class="Tres">
+            <p id="res"></p>
+        </div>
+
+        <div class="botoes">
+            <table>
+                <tr>
+                    <td colspan="2" onclick="limpar()" style="background-color:#2AB3A7;">AC</td>
+                    <td onclick="voltar()" class="aut">	⌫ </td>
+                    <td onclick="inserir('/')" style="background-color:#2AB3A7;" class="aut"> ÷ </td>
+                    
+                </tr>
+
+                <tr>
+                    <td onclick="inserir('7')">7</td>
+                    <td onclick="inserir('8')">8</td>
+                    <td onclick="inserir('9')">9</td>
+                    <td onclick="inserir('*')" style="background-color:#2AB3A7;" class="aut">x</td>
+                    
+                </tr>
+
+                <tr>
+                    <td onclick="inserir('4')">4</td>
+                    <td onclick="inserir('5')">5</td>
+                    <td onclick="inserir('6')">6</td>
+                    <td onclick="inserir('-')" style="background-color:#2AB3A7;" class="aut">-</td>
+                    
+                </tr>
+
+                <tr>
+                    <td onclick="inserir('1')">1</td>
+                    <td onclick="inserir('2')">2</td>
+                    <td onclick="inserir('3')">3</td>
+                    <td onclick="inserir('+')" style="background-color:#2AB3A7;" class="aut">+</td>
+                </tr>
+
+                <tr>
+                    <td onclick="inserir('0')">0</td>
+                    <td onclick="inserir('.')">.</td>
+                    <td colspan="2" onclick="calc()" style="background-color:#2AB3A7;" class="aut">=</td>
+                </tr>
+            </table>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
